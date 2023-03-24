@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Nilay's Car Price Prediction App
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   
+    </head>
+    
+    <body>
+        <div style="text-align:center;">
+            <img style="height:70px;width:70px;" src="{{url_for('static', filename='/images/car.png')}}" align="middle" />
+        
+            <h3 style="color:#ffffff;">
+               Nilay's AI based Car Price Prediction
+            </h3>
+            
+            <form action="predict" method="post">
+                <input name="km" type="number" placeholder="Enter kilomerters" min="1" max="1000000"  required/>
+                <br> 
+                <input name="age" type="number" placeholder="Enter car age" min="0" max="100"  required/>
+                <br> 
+                <input name="op" type="number" placeholder="Enter original price" min="10000" max="10000000" required/>
+                <br> 
+                <select name="fuel_type">
+                    <option value="Select">Select Fuel</option> 
+                    <option value="Petrol">Petrol</option> 
+                    <option value="Diesel">Diesel</option> 
+                    <option value="CNG">CNG</option>                     
+                </select>
+                <br> 
+                <select name="transmission">
+                    <option value="Select">Select transmission</option> 
+                    <option value="Automatic">Automatic</option> 
+                    <option value="Manual">Manual</option>                     
+                </select>
+                
+               <br> <button>Predict Price </button>
+            
+                <br>
+                {{prediction_value}}
+            </form>
+        </div>
+    </body>    
+</html>
+
+
+
+
+

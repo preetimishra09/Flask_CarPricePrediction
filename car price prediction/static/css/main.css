@@ -1,0 +1,36 @@
+body{
+    background-color:#708090;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    width:200px;
+    height:30px;
+    text-align: center;
+    border: none;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+select{
+    width:200px;
+    height:30px;
+    text-align: center;
+    border: none;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+
+button{
+    
+        width: 200px;
+        
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom:10px;
+        text-align: center;
+        background-color: #3269bc;
+        color:#ffffff;
+      
+}
